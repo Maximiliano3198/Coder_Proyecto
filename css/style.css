@@ -1,0 +1,95 @@
+body {
+    background-image: url(../img/pngwing.com.png);
+    background-size: 40px;
+}
+
+.navbar>.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    #list {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    #anuncio {
+        position: fixed !important;
+        margin: 0;
+        width: 15% !important;
+
+    }
+
+}
+
+.logo {
+    width: min-content;
+}
+
+.adopcion img {
+    height: 150px;
+    width: 150px;
+}
+
+.adopcion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+#list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#list2 {
+    display: flex;
+    justify-content: center;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+.btn img {
+    width: 30px;
+    height: 30px;
+}
+
+#anuncio {
+    display: flex;
+    -ms-flex-align: center;
+    position: initial;
+    top: 15%;
+    width: auto;
+    right: 0px;
+}

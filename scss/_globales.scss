@@ -1,0 +1,78 @@
+nav {
+    .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        .logo {
+            width: min-content;
+        }
+    }
+}
+
+/*fixed*/
+#anuncio {
+    display: flex;
+    -ms-flex-align: center;
+    position: initial;
+    top: 15%;
+    width: auto;
+    right: 0px;
+}
+
+/*body*/
+body {
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    background-image: url(../img/pngwing.com.png);
+    background-size: 40px;
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+    .btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mb-2 {
+        margin-bottom: 0.0rem !important;
+    }
+}
+
+/*media queries*/
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    #list {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .noticia img {
+        width: 50% !important;
+        height: 200px !important;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    #anuncio {
+        position: fixed !important;
+        margin: 0;
+        width: 15% !important;
+
+    }
+
+}

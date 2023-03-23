@@ -1,0 +1,39 @@
+/*adopcion1*/
+.adopcion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .zoom {
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.5);
+            opacity: 1;
+            -webkit-transition: opacity 500ms;
+            -moz-transition: opacity 500ms;
+            -o-transition: opacity 500ms;
+            -ms-transition: opacity 500ms;
+            transition: opacity 500ms;
+        }
+    }
+}
+
+/*adopcion2*/
+#list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#list2 {
+    display: flex;
+    justify-content: center;
+}

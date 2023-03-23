@@ -1,95 +1,129 @@
+/* Index */
+div.noticia {
+  width: 100%;
+}
+div.noticia .derecha {
+  margin-left: 15px;
+  height: 130px;
+  width: 100%;
+  float: right;
+}
+div.noticia .izquierda {
+  margin-right: 15px;
+  height: 130px;
+  width: 100%;
+  float: left;
+}
+
+/* Contacto */
+.tab-pane {
+  font-size: 25px;
+}
+
+.checks {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+nav .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+nav .container-fluid .logo {
+  width: min-content;
+}
+
+/*fixed*/
+#anuncio {
+  display: flex;
+  -ms-flex-align: center;
+  position: initial;
+  top: 15%;
+  width: auto;
+  right: 0px;
+}
+
+/*body*/
 body {
-    background-image: url(../img/pngwing.com.png);
-    background-size: 40px;
+  background-image: url(../img/pngwing.com.png);
+  background-size: 40px;
+}
+body h1 {
+  margin-bottom: 15px;
+}
+body h2 {
+  font-size: 25px;
+}
+body .row {
+  justify-content: space-evenly;
+}
+body .btn img {
+  width: 30px;
+  height: 30px;
+}
+body .mb-2 {
+  margin-bottom: 0rem !important;
 }
 
-.navbar>.container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-}
-
+/*media queries*/
 @media (min-width: 768px) {
-    .navbar-expand-md .navbar-collapse {
-        display: flex !important;
-        flex-basis: auto;
-        justify-content: flex-end;
-    }
-
-    #list {
-        display: flex;
-        flex-direction: row !important;
-    }
-
-
+  .navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+  #list {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .noticia img {
+    width: 50% !important;
+    height: 200px !important;
+  }
 }
-
 @media (min-width: 1024px) {
-    #anuncio {
-        position: fixed !important;
-        margin: 0;
-        width: 15% !important;
-
-    }
-
+  #anuncio {
+    position: fixed !important;
+    margin: 0;
+    width: 15% !important;
+  }
 }
-
-.logo {
-    width: min-content;
-}
-
-.adopcion img {
-    height: 150px;
-    width: 150px;
-}
-
+/*adopcion1*/
 .adopcion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.adopcion img {
+  height: 150px;
+  width: 150px;
+}
+.adopcion .zoom {
+  transition: transform 0.2s;
+}
+.adopcion .zoom:hover {
+  transform: scale(1.5);
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
-.row {
-    justify-content: space-evenly;
-}
-
+/*adopcion2*/
 #list {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #list2 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.zoom {
-    transition: transform .2s;
-}
-
-.zoom:hover {
-    transform: scale(1.5);
-    opacity: 1;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    -ms-transition: opacity 500ms;
-    transition: opacity 500ms;
-}
-
-.btn img {
-    width: 30px;
-    height: 30px;
-}
-
-#anuncio {
-    display: flex;
-    -ms-flex-align: center;
-    position: initial;
-    top: 15%;
-    width: auto;
-    right: 0px;
-}
+/*# sourceMappingURL=style.css.map */

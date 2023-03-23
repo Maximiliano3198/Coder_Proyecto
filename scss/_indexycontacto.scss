@@ -1,0 +1,34 @@
+/* Index */
+@mixin size-b ($h, $w, $f) {
+  height: $h;
+  width: $w;
+  float: $f;
+}
+
+div.noticia {
+  width: 100%;
+
+  .derecha {
+    margin-left: 15px;
+    @include size-b(130px, 100%, right);
+  }
+
+  .izquierda {
+    margin-right: 15px;
+    @include size-b(130px, 100%, left);
+  }
+}
+
+/* Contacto */
+@mixin fs ($fs) {
+  font-size: $fs;
+}
+
+.tab-pane {
+  @include fs(25px);
+}
+
+.checks {
+  @include fs(18px);
+  margin-top: 20px;
+}
